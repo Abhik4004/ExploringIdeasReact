@@ -1,0 +1,22 @@
+/* Flexbox and spacing utilities, already perfect from your current CSS */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 0.3px;
+}
+
+.title {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 46px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0px;
+}
