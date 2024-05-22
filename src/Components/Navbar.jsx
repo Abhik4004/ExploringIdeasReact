@@ -67,59 +67,62 @@ const handleMouseLeave = (e) => {
     underline.style.left = "50%";
   }
 };
-const Navbar = () => (
-  <div style={styles.navbar}>
-    <ul style={styles.navList}>
-      <li
-        style={styles.navItem}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Home
-        <span className="underline" style={styles.navItemUnderline}></span>
-      </li>
-      <li
-        style={styles.navItem}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        About
-        <span className="underline" style={styles.navItemUnderline}></span>
-      </li>
-      <li
-        style={styles.navItem}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Publications
-        <span className="underline" style={styles.navItemUnderline}></span>
-      </li>
-      <li
-        style={styles.navItem}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Projects
-        <span className="underline" style={styles.navItemUnderline}></span>
-      </li>
-      <li
-        style={styles.navItem}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Pupil
-        <span className="underline" style={styles.navItemUnderline}></span>
-      </li>
-      <li
-        style={styles.navItem}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Contact
-        <span className="underline" style={styles.navItemUnderline}></span>
-      </li>
-    </ul>
-  </div>
-);
+
+const Navbar = () => {
+  return (
+    <div style={styles.navbar}>
+      <ul style={styles.navList}>
+        <li
+          style={styles.navItem}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          Home
+          <span className="underline" style={styles.navItemUnderline}></span>
+        </li>
+        <li
+          style={styles.navItem}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          About
+          <span className="underline" style={styles.navItemUnderline}></span>
+        </li>
+        <li
+          style={styles.navItem}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          Publications
+          <span className="underline" style={styles.navItemUnderline}></span>
+        </li>
+        <li
+          style={styles.navItem}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          Projects
+          <span className="underline" style={styles.navItemUnderline}></span>
+        </li>
+        <li
+          style={styles.navItem}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          Pupil
+          <span className="underline" style={styles.navItemUnderline}></span>
+        </li>
+        <li
+          style={styles.navItem}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          Contact
+          <span className="underline" style={styles.navItemUnderline}></span>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
 export default Navbar;

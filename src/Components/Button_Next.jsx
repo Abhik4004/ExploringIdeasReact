@@ -37,7 +37,7 @@ function Button() {
             transform="translate(-0.03)"
           ></path>
         </svg>
-        <p>Hover Me</p>
+        <p>Connect</p>
       </button>
     </div>
   );

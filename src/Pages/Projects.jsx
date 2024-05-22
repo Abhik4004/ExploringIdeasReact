@@ -1,5 +1,5 @@
 import "./Projects.css";
-import LearnMoreButton from "./LearnMoreButton";
+import LearnMoreButton from "../Components/LearnMoreButton";
 const Projects = () => {
   return (
     <section className="mw7 center">

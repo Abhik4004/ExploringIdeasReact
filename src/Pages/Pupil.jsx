@@ -1,4 +1,4 @@
-import PupilCard from "./PupilCard";
+import PupilCard from "../Components/PupilCard";
 import "./Pupil.css";
 
 const pupils = [

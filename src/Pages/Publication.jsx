@@ -1,4 +1,4 @@
-import LearnMoreButton from "./LearnMoreButton";
+import LearnMoreButton from "../Components/LearnMoreButton";
 import "./Publication.css"; // Import the CSS file
 
 const Publication = () => {
@@ -50,32 +50,6 @@ const Publication = () => {
                 wholesalers, transport businesses, customs, etc. They are
                 usually large plain buildings in industrial areas of cities,
                 towns and villages.
-              </p>
-              <LearnMoreButton />
-            </div>
-          </div>
-        </a>
-      </article>
-      <article className="bb b--black-10">
-        <a className="db pv4 ph3 ph0-l no-underline black dim" href="#0">
-          <div className="flex flex-column flex-row-ns">
-            <div className="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-              <img
-                src="http://mrmrs.github.io/photos/whale.jpg"
-                className="db"
-                alt="Photo of a whale's tale coming crashing out of the water."
-              />
-            </div>
-            <div className="w-100 w-60-ns pl3-ns">
-              <h1 className="f3 fw1 baskerville mt0 lh-title">
-                Giant Whale Invests Huge Money to Build a Computer Out of
-                Plankton
-              </h1>
-              <p className="f6 f5-l lh-copy">
-                Whale is the common name for a widely distributed and diverse
-                group of fully aquatic placental marine mammals. They are an
-                informal grouping within the infraorder Cetacea, usually
-                excluding dolphins and porpoises.
               </p>
               <LearnMoreButton />
             </div>

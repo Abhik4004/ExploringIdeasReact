@@ -1,11 +1,11 @@
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import Projects from "./Projects";
-import About from "./About";
-import Publication from "./Publication";
-import Pupil from "./Pupil";
-import Button from "./Button_Next";
-import Footer from "./Footer";
+import Navbar from "./Components/Navbar";
+import Hero from "./Pages/Hero";
+import Projects from "./Pages/Projects";
+import About from "./Pages/About";
+import Publication from "./Pages/Publication";
+import Pupil from "./Pages/Pupil";
+import Button from "./Components/Button_Next";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
