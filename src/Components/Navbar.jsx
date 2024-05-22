@@ -1,5 +1,3 @@
-import { useNavigate } from "react-router-dom";
-
 const styles = {
   navbar: {
     backgroundColor: "#333",
