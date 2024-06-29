@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 80px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -76,6 +77,10 @@
 @media (max-width: 780px) {
   .hamburger {
     display: block;
+  }
+
+  .navbar {
+    height: 80px;
   }
 
   .navList {
