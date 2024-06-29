@@ -13,14 +13,10 @@ const About = () => {
             In a world where innovation drives progress, "Exploring Ideas"
             stands as a beacon of creativity and inspiration. Our mission is to
             unlock the potential within every thought, fostering an environment
-            where imagination knows no bounds. By delving into the depths of
-            curiosity and pushing the boundaries of conventional thinking, we
-            aim to shape the future with ideas that inspire and transform. Here,
-            every spark of creativity is nurtured and celebrated, paving the way
-            for groundbreaking innovations. Join us on a journey where we fuel
-            the fire of innovation, turning dreams into reality and pioneering
-            possibilities that were once unimaginable. At "Exploring Ideas,"
-            your ideas are the foundation of a brighter, more innovative
+            where imagination knows no bounds. Join us on a journey where we
+            fuel the fire of innovation, turning dreams into reality and
+            pioneering possibilities that were once unimaginable. At "Exploring
+            Ideas," your ideas are the foundation of a brighter, more innovative
             tomorrow.
           </p>
         </section>
