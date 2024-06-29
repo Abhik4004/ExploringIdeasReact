@@ -73,7 +73,7 @@
   background-color: #333;
 }
 
-@media (max-width: 384px) {
+@media (max-width: 700px) {
   .hamburger {
     display: block;
   }
