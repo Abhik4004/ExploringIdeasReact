@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import Pupil from "./Pages/Pupil";
 import Button from "./Components/Button_Next";
 import Footer from "./Components/Footer";
+import "./FullPage.css"; // Add this line to import the CSS
 
 function FullPage() {
   return (
@@ -14,7 +15,7 @@ function FullPage() {
       <About />
       <Projects />
       <Pupil />
-      <div style={{ marginLeft: 650, marginBottom: 50 }}>
+      <div className="button-container">
         <Button />
       </div>
       <Footer />

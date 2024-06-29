@@ -20,7 +20,7 @@ const Projects = () => {
           <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
             <img
               src="http://mrmrs.github.io/photos/cpu.jpg"
-              className="db w-100"
+              className="db w-100 image-margin"
               alt="Tech Giant's Quantum Computer Initiative"
             />
           </div>
@@ -42,7 +42,7 @@ const Projects = () => {
           <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
             <img
               src="http://mrmrs.github.io/photos/whale.jpg"
-              className="db w-100"
+              className="db w-100 image-margin"
               alt="Whale Habitat Preservation Project"
             />
           </div>
@@ -64,7 +64,7 @@ const Projects = () => {
           <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
             <img
               src="http://mrmrs.github.io/photos/warehouse.jpg"
-              className="db w-100"
+              className="db w-100 image-margin"
               alt="Lost World of Vinyl Records Discovery"
             />
           </div>

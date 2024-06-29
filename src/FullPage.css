@@ -1,0 +1,8 @@
+/* FullPage.css */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}

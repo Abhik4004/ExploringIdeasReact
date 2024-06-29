@@ -7,7 +7,7 @@ const Footer = () => {
       className="tc-l bg-center cover bg-black"
     >
       <div className="w-100 ph3 pv5 bg-black-80">
-        <a
+        {/* <a
           className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
           href="https://facebook.com"
           title="Facebook"
@@ -28,7 +28,7 @@ const Footer = () => {
             />
           </svg>
           <span className="f6 ml3 pr2">Facebook</span>
-        </a>
+        </a> */}
       </div>
     </footer>
   );
