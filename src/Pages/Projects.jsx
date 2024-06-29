@@ -1,27 +1,27 @@
 import "./Projects.css";
 import LearnMoreButton from "../Components/LearnMoreButton";
+
 const Projects = () => {
   return (
     <section className="mw7 center">
       <h2 className="athelas ph3 ph0-l">Projects</h2>
+
       <article className="pv4 bt bb b--black-10 ph3 ph0-l">
         <div className="flex flex-column flex-row-ns">
           <div className="w-100 w-60-ns pr3-ns order-2 order-1-ns">
             <h1 className="f3 athelas mt0 lh-title">
-              Tech Giant Invests Huge Money to Build a Computer Out of Science
-              Fiction
+              Tech Giant's Quantum Computer Initiative
             </h1>
             <p className="f5 f4-l lh-copy athelas">
-              The tech giant says it is ready to begin planning a quantum
-              computer, a powerful cpu machine that relies on subatomic
-              particles instead of transistors.
+              The tech giant is planning a quantum computer, revolutionizing
+              computing with subatomic particles.
             </p>
           </div>
           <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
             <img
               src="http://mrmrs.github.io/photos/cpu.jpg"
-              className="db"
-              alt="Photo of a dimly lit room with a computer interface terminal."
+              className="db w-100"
+              alt="Tech Giant's Quantum Computer Initiative"
             />
           </div>
         </div>
@@ -32,19 +32,18 @@ const Projects = () => {
         <div className="flex flex-column flex-row-ns">
           <div className="w-100 w-60-ns pr3-ns order-2 order-1-ns">
             <h1 className="f3 athelas mt0 lh-title">
-              A whale takes up residence in a large body of water
+              Whale Habitat Preservation Project
             </h1>
             <p className="f5 f4-l lh-copy athelas">
-              This giant of a whale says it is ready to begin planning a new
-              swim later this afternoon. A powerful mammal that relies on fish
-              and plankton instead of hamburgers.
+              Initiative to protect whale habitats and study their migration
+              patterns and ecosystem impact.
             </p>
           </div>
           <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
             <img
               src="http://mrmrs.github.io/photos/whale.jpg"
-              className="db"
-              alt="Photo of a whale's tale coming crashing out of the water."
+              className="db w-100"
+              alt="Whale Habitat Preservation Project"
             />
           </div>
         </div>
@@ -55,19 +54,18 @@ const Projects = () => {
         <div className="flex flex-column flex-row-ns">
           <div className="w-100 w-60-ns pr3-ns order-2 order-1-ns">
             <h1 className="f3 athelas mt0 lh-title">
-              ‘We Couldn’t Believe Our Eyes’: A Lost World of Vinyl Is Found
+              Lost World of Vinyl Records Discovery
             </h1>
             <p className="f5 f4-l lh-copy athelas">
-              Archaeologists have found more than 40 tons of vinyl records, some
-              more than a five years old, shedding light on early hipster
-              trends.
+              Archaeological find of over 40 tons of vinyl records, revealing
+              early music trends and cultural insights.
             </p>
           </div>
           <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
             <img
               src="http://mrmrs.github.io/photos/warehouse.jpg"
-              className="db"
-              alt="Photo of a warehouse with stacked shelves."
+              className="db w-100"
+              alt="Lost World of Vinyl Records Discovery"
             />
           </div>
         </div>

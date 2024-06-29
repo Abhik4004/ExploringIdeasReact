@@ -2,7 +2,6 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Pages/Hero";
 import Projects from "./Pages/Projects";
 import About from "./Pages/About";
-import Publication from "./Pages/Publication";
 import Pupil from "./Pages/Pupil";
 import Button from "./Components/Button_Next";
 import Footer from "./Components/Footer";
@@ -14,7 +13,6 @@ function FullPage() {
       <Hero />
       <About />
       <Projects />
-      <Publication />
       <Pupil />
       <div style={{ marginLeft: 650, marginBottom: 50 }}>
         <Button />

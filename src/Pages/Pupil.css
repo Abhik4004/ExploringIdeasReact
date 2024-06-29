@@ -1,22 +1,73 @@
-/* Flexbox and spacing utilities, already perfect from your current CSS */
-.flex-wrap {
-  flex-wrap: wrap;
+/* Pupil.css */
+
+.pupil-container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.space-x-4 > * + * {
-  margin-left: 1rem;
-}
-
-.space-y-4 > * + * {
-  margin-top: 0.3px;
-}
-
-.title {
-  margin-top: 50px;
-  width: 100%;
-  text-align: center;
-  font-size: 46px;
+.team-title {
+  font-size: 24px;
   font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pupil-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pupil-card {
+  max-width: 250px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pupil-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.pupil-card h2 {
+  margin-bottom: 5px;
+}
+
+.pupil-card p {
+  margin-bottom: 15px;
+}
+
+.pupil-card .social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.pupil-card .social-links a {
+  margin: 0 10px;
   color: #333;
-  margin-bottom: 0px;
+}
+
+.pupil-card .social-links a:hover {
+  color: #007bff;
+}
+
+.fade-in {
+  animation: fadeInAnimation 0.5s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
