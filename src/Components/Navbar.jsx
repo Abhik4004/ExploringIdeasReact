@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -10,7 +11,7 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const handleItemClick = (item) => {
+  const handleSetActive = (item) => {
     setActiveItem(item);
     setMenuOpen(false); // Close the menu on item click (optional)
   };
@@ -21,19 +22,25 @@ const Navbar = () => {
         {menuOpen ? <FaTimes /> : <FaBars />}
       </span>
       <ul className={`navList ${menuOpen ? "menuOpen" : ""}`}>
-        {["Home", "About", "Publications", "Projects", "Pupil", "Contact"].map(
-          (item) => (
-            <li
-              key={item}
-              className={`navItem ${activeItem === item ? "active" : ""}`}
-              onClick={() => handleItemClick(item)}
+        {["Home", "About", "Projects", "Team", "Contact"].map((item) => (
+          <li
+            key={item}
+            className={`navItem ${activeItem === item ? "active" : ""}`}
+            onClick={() => handleSetActive(item)}
+          >
+            <Link
+              to={item.toLowerCase()}
+              smooth={true}
+              duration={500}
+              className="navLink"
+              activeClass="active"
+              spy={true}
+              onSetActive={() => handleSetActive(item)}
             >
-              <a href={`#${item}`} className="navLink">
-                {item}
-              </a>
-            </li>
-          )
-        )}
+              {item}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

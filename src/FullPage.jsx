@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./Components/Navbar";
 import Hero from "./Pages/Hero";
 import Projects from "./Pages/Projects";
@@ -11,14 +12,24 @@ function FullPage() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Pupil />
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="team">
+        <Pupil />
+      </div>
       <div className="button-container">
         <Button />
       </div>
-      <Footer />
+      <div id="contact">
+        <Footer />
+      </div>
     </div>
   );
 }

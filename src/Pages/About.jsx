@@ -6,22 +6,22 @@ const About = () => {
       <div className="about-content">
         <header className="about-header">
           <h3 className="about-title">Exploring Ideas</h3>
-          <h4 className="about-subtitle">Siem Reap, Cambodia</h4>
+          <h4 className="about-subtitle">"Shaping the Future with Ideas"</h4>
         </header>
         <section className="about-section">
           <p className="about-text">
-            In the realm of creativity and innovation, exploring ideas serves as
-            the cornerstone for progress and discovery. It is the process of
-            delving into the unknown, challenging the status quo, and
-            envisioning possibilities beyond the current horizon. By engaging in
-            brainstorming, research, and experimentation, individuals and teams
-            can uncover unique solutions to complex problems, generate
-            groundbreaking concepts, and foster a culture of continuous
-            improvement. Whether in technology, art, science, or everyday life,
-            the act of exploring ideas ignites curiosity, fuels passion, and
-            paves the way for transformative change. Embracing this journey not
-            only leads to personal growth but also contributes to the
-            advancement of society as a whole.
+            In a world where innovation drives progress, "Exploring Ideas"
+            stands as a beacon of creativity and inspiration. Our mission is to
+            unlock the potential within every thought, fostering an environment
+            where imagination knows no bounds. By delving into the depths of
+            curiosity and pushing the boundaries of conventional thinking, we
+            aim to shape the future with ideas that inspire and transform. Here,
+            every spark of creativity is nurtured and celebrated, paving the way
+            for groundbreaking innovations. Join us on a journey where we fuel
+            the fire of innovation, turning dreams into reality and pioneering
+            possibilities that were once unimaginable. At "Exploring Ideas,"
+            your ideas are the foundation of a brighter, more innovative
+            tomorrow.
           </p>
         </section>
       </div>
