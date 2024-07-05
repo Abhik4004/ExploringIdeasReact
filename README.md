@@ -10,9 +10,9 @@ Our project is aimed at [describe briefly what the project is about]. We're pass
 
 To get started with our project, follow these simple steps:
 
-1. **Clone the Repository**: `git clone https://github.com/your-username/your-repository.git`
-2. **Install Dependencies**: `npm install` or `pip install -r requirements.txt`
-3. **Start the Application**: `npm start` or `python app.py`
+1. **Clone the Repository**: `https://github.com/Abhik4004/ExploringIdeasReact/`
+2. **Install Dependencies**: `npm install` 
+3. **Start the Application**: `npm run dev` 
 4. **Explore and Contribute**: Dive into the code, explore the features, and contribute to make it even better!
 
 ## 📋 Contribution Guidelines
