@@ -28,7 +28,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="hero">
+    <div className="hero w-full">
       <h1 className="title">Exploring Ideas</h1>
       <p ref={sloganRef} className={`slogan ${isAnimated ? "animated" : ""}`}>
         Innovate, Create, Elevate

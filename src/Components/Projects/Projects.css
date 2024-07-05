@@ -6,7 +6,7 @@
 }
 
 .projects-heading {
-  font-family: "Athelas", serif;
+  /* font-family: "Athelas", serif; */
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #333;
@@ -39,7 +39,7 @@
 }
 
 .card-title {
-  font-family: "Athelas", serif;
+  /* font-family: "Athelas", serif; */
   font-size: 1.75rem;
   margin-bottom: 1rem;
   color: #007bff;

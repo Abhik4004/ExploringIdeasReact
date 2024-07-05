@@ -17,11 +17,7 @@ const Navbar = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div className="bg-gray-900 p-4 flex items-center justify-between top-0 left-0 fixed z-10 w-screen">
-=======
-    <nav className="navbar">
->>>>>>> 9a1a1d408363f26a66427d86752c7f76d07452e5
+    <nav className="bg-gray-900 p-4 flex items-center justify-between top-0 left-0 fixed z-10 w-full">
       <span className="hamburger" onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </span>
