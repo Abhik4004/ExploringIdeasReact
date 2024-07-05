@@ -1,73 +1,59 @@
-/* Pupil.css */
-
 .pupil-container {
-  max-width: 95%;
-  margin: 0 auto;
   padding: 20px;
+  text-align: center;
 }
 
 .team-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .pupil-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .pupil-card {
-  max-width: 250px;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
+  background-color: #f0f0f0;
+  padding: 20px;
   border-radius: 8px;
-  margin: 10px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .pupil-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   margin-bottom: 10px;
 }
 
-.pupil-card h2 {
-  margin-bottom: 5px;
+.social-links {
+  margin-top: 10px;
 }
 
-.pupil-card p {
-  margin-bottom: 15px;
-}
-
-.pupil-card .social-links {
-  display: flex;
-  justify-content: center;
-}
-
-.pupil-card .social-links a {
-  margin: 0 10px;
-  color: #333;
-}
-
-.pupil-card .social-links a:hover {
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
   color: #007bff;
+  text-decoration: none;
 }
 
-.fade-in {
-  animation: fadeInAnimation 0.5s ease-in-out;
+.social-links a:hover {
+  text-decoration: underline;
 }
 
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.show-teams-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-teams-btn:hover {
+  background-color: #0056b3;
 }

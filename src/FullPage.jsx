@@ -1,36 +1,74 @@
-import React from "react";
+import { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Hero from "./Pages/Hero";
 import Projects from "./Pages/Projects";
 import About from "./Pages/About";
-import Pupil from "./Pages/Pupil";
-import Button from "./Components/Button_Next";
+import Teams from "./Pages/Full_Page/Team";
+import ContactPage from "./Pages/ContactPage";
 import Footer from "./Components/Footer";
-import "./FullPage.css"; // Add this line to import the CSS
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./FullPage.css";
+import Pupil from "./Pages/Pupil";
 
 function FullPage() {
+  const [showTeams, setShowTeams] = useState(false);
+
+  const handleShowTeams = () => {
+    setShowTeams(true);
+  };
+
   return (
-    <div>
-      <Navbar />
-      <div id="home">
-        <Hero />
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <div id="home">
+                  <Hero />
+                </div>
+                <div id="about">
+                  <About />
+                </div>
+                <div id="projects">
+                  <Projects />
+                </div>
+              </>
+            }
+          />
+          <Route
+            path="/web-dev-projects"
+            element={<div>Web Development Projects</div>}
+          />
+          <Route
+            path="/aiml-projects"
+            element={<div>AI/ML, IoT, Cloud Projects</div>}
+          />
+        </Routes>
+        {!showTeams && (
+          <>
+            <Pupil onShowTeams={handleShowTeams} />
+            <div className="button-container">
+              <ContactPage />
+            </div>
+            <div id="contact">
+              <Footer />
+            </div>
+          </>
+        )}
+        {showTeams && (
+          <>
+            <Teams />
+            <div className="button-container">
+              <ContactPage />
+            </div>
+            <Footer />
+          </>
+        )}
       </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
-      <div id="team">
-        <Pupil />
-      </div>
-      <div className="button-container">
-        <Button />
-      </div>
-      <div id="contact">
-        <Footer />
-      </div>
-    </div>
+    </Router>
   );
 }
 

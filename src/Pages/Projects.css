@@ -1,131 +1,79 @@
-/* Projects.css */
-
-.mw7 {
-  max-width: 95%;
+.projects-container {
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-.center {
+  padding: 2rem;
   text-align: center;
 }
 
-.pv4 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.projects-heading {
+  font-family: "Athelas", serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
 }
 
-.bt {
-  border-top: 1px solid black;
-}
-
-.bb {
-  border-bottom: 1px solid black;
-}
-
-.b--black-10 {
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.ph3 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.ph0-l {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.flex {
+.cards-container {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.flex-column {
-  flex-direction: column;
+.column {
+  width: 30%; /* Adjust as needed for spacing */
+  margin-bottom: 2rem;
 }
 
-.flex-row-ns {
-  flex-direction: row;
-}
-
-@media (max-width: 384px) {
-  .flex-row-ns {
-    flex-direction: column;
-  }
-
-  .order-1-ns {
-    order: 1;
-  }
-
-  .order-2-ns {
-    order: 2;
-  }
-
-  .w-100 {
-    width: 100%;
-  }
-
-  .w-60-ns {
-    width: 100%;
-  }
-
-  .w-40-ns {
-    width: 100%;
-  }
-
-  .pr3-ns {
-    padding-right: 0;
-  }
-
-  .pl3-ns {
-    padding-left: 0;
-  }
-
-  .mb4 {
-    margin-bottom: 1rem;
-  }
-
-  .mb0-ns {
-    margin-bottom: 0;
-  }
-}
-
-.athelas {
-  font-family: Georgia, serif;
-}
-
-.f3 {
-  font-size: 1.5rem;
-}
-
-.f5 {
-  font-size: 1rem;
-}
-
-.f4-l {
-  font-size: 1.25rem;
-}
-
-.lh-title {
-  line-height: 1.25;
-}
-
-.lh-copy {
-  line-height: 1.5;
-}
-
-.mt0 {
-  margin-top: 0;
-}
-
-.db {
-  display: block;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.image-margin {
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
   margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-family: "Athelas", serif;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.card-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 1024px) {
+  .column {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
 }
