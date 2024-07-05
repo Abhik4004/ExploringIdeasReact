@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
+    <div className="bg-gray-900 p-4 flex items-center justify-between top-0 left-0 fixed z-10 w-screen">
       <span className="hamburger" onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </span>

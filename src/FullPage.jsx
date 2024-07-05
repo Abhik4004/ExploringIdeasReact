@@ -10,7 +10,7 @@ import "./FullPage.css"; // Add this line to import the CSS
 
 function FullPage() {
   return (
-    <div>
+    <div className="w-screen">
       <Navbar />
       <div id="home">
         <Hero />
