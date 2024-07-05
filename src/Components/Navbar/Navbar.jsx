@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link as RouterLink, NavLink } from "react-router-dom"; // Use RouterLink for regular links and NavLink for active links
+import { NavHashLink } from "react-router-hash-link";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -38,8 +39,8 @@ const Navbar = () => {
                   {item}
                 </RouterLink>
               ) : (
-                <NavLink
-                  to={item.toLowerCase()}
+                <NavHashLink
+                  to={`#${item.toLowerCase()}`}
                   smooth={true}
                   duration={500}
                   className="navLink"
@@ -48,7 +49,7 @@ const Navbar = () => {
                   onClick={() => handleSetActive(item)}
                 >
                   {item}
-                </NavLink>
+                </NavHashLink>
               )}
             </li>
           )

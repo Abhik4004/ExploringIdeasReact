@@ -2,7 +2,7 @@ import "./About.css"; // Import CSS file
 
 const About = () => {
   return (
-    <article className="about-container p-32 w-full">
+    <article className="about-container p-32 w-full" id="about">
       <div className="about-content">
         <header className="about-header">
           <h3 className="about-title">Exploring Ideas</h3>
