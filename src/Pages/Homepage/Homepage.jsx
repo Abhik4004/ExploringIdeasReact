@@ -4,6 +4,7 @@ import { Projects } from "../../Components/";
 import About from "../About";
 import Pupil from "../Pupil";
 import ContactPage from "../ContactPage";
+import Teams from "../Full_Page/Team";
 
 const Homepage = () => {
   const [showTeams, setShowTeams] = useState(false);
@@ -18,11 +19,7 @@ const Homepage = () => {
       <About />
       <Projects />
       <>
-        {showTeams ? (
-          "Here Team component suppose to go"
-        ) : (
-          <Pupil onShowTeams={handleShowTeams} />
-        )}
+        {showTeams ? <Teams /> : <Pupil onShowTeams={handleShowTeams} />}
         <ContactPage />
       </>
     </>

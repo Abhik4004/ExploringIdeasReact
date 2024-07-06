@@ -24,10 +24,12 @@ const Pupil = ({ onShowTeams }) => {
       <div className="pupil-grid">
         <div className="fade-in">
           <div className="pupil-card">
-            <img src={mentor.image} alt={mentor.name} />
+            <img src={mentor.image} className="image" alt={mentor.name} />
             <div className="pupil-details">
-              <h2>{mentor.name}</h2>
-              <p className="mentor-title">{mentor.title}</p>
+              <h2>
+                <b>{mentor.name}</b> | {mentor.title}
+              </h2>
+              <hr></hr>
               <p className="mentor-introduction">{mentor.introduction}</p>
               <div className="social-links">
                 <a

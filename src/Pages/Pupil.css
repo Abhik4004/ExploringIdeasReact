@@ -1,12 +1,14 @@
 .pupil-container {
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .team-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .pupil-grid {
@@ -20,8 +22,18 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
 }
 
+h2 {
+  margin-left: 0.5rem;
+}
+
+.image {
+  margin-right: 1.5rem;
+}
 .pupil-card img {
   width: 120px;
   height: 120px;
@@ -52,6 +64,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 45%;
 }
 
 .show-teams-btn:hover {
