@@ -30,27 +30,17 @@ const Navbar = () => {
               className={`navItem ${activeItem === item ? "active" : ""}`}
               onClick={() => handleSetActive(item)}
             >
-              {item === "Team" ? (
-                <RouterLink
-                  to="/team" // Assuming "/team" is the route to your Team component
-                  className="navLink"
-                  onClick={() => handleSetActive(item)}
-                >
-                  {item}
-                </RouterLink>
-              ) : (
-                <NavHashLink
-                  to={`#${item.toLowerCase()}`}
-                  smooth={true}
-                  duration={500}
-                  className="navLink"
-                  activeClassName="active"
-                  spy={true}
-                  onClick={() => handleSetActive(item)}
-                >
-                  {item}
-                </NavHashLink>
-              )}
+              <NavHashLink
+                to={`#${item.toLowerCase()}`}
+                smooth={true}
+                duration={500}
+                className="navLink"
+                activeClassName="active"
+                spy="true"
+                onClick={() => handleSetActive(item)}
+              >
+                {item}
+              </NavHashLink>
             </li>
           )
         )}

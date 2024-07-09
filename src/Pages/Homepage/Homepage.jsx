@@ -4,12 +4,13 @@ import { Projects } from "../../Components/";
 import About from "../About";
 import Pupil from "../Pupil";
 import ContactPage from "../ContactPage";
+import Teams from "../Full_Page/Team";
 
 const Homepage = () => {
   const [showTeams, setShowTeams] = useState(false);
 
   const handleShowTeams = () => {
-    setShowTeams(true);
+    setShowTeams(!showTeams);
   };
 
   return (
@@ -19,11 +20,11 @@ const Homepage = () => {
       <Projects />
       <>
         {showTeams ? (
-          "Here Team component suppose to go"
+          <Teams onShowTeams={handleShowTeams} />
         ) : (
           <Pupil onShowTeams={handleShowTeams} />
         )}
-        <ContactPage />
+        {/* <ContactPage /> */}
       </>
     </>
   );

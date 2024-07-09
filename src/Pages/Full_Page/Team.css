@@ -1,6 +1,6 @@
 .teams-container {
   max-width: 100%;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .teams-heading {
@@ -29,7 +29,8 @@
   height: 150px; /* Fixed height for images */
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto; /* Center the image horizontally */
+  display: block; /* Ensure image is treated as a block element */
 }
 
 .coordinators-grid {

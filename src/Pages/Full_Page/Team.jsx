@@ -2,19 +2,18 @@ import "./Team.css";
 
 const mentors = [
   {
-    name: "John Doe",
+    name: "Dr. Satyabrata Mighty",
     title: "Web Developer",
-    image:
-      "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?w=740&t=st=1719649143~exp=1719649743~hmac=68c511949afbe52eae7885a6f9ec44cf4efeb119c7d8e4911b705d8acee6a377",
+    image: "assets/sbm.enc",
     github: "https://github.com/johndoe",
     linkedin: "https://www.linkedin.com/in/johndoe",
     coordinators: [
       {
-        name: "Alice Cooper",
-        title: "Frontend Coordinator",
-        image: "https://randomuser.me/api/portraits/women/68.jpg",
-        github: "https://github.com/alicecooper",
-        linkedin: "https://www.linkedin.com/in/alicecooper",
+        name: "Sorbopriyo Roy",
+        title: "Full-stack Coordinator",
+        image: "assets/sorbopriyo.png",
+        github: "https://github.com/SobujRoySunday",
+        linkedin: "https://www.linkedin.com/in/sorbopriyo/",
         members: [
           {
             name: "Bob Johnson",
@@ -23,35 +22,14 @@ const mentors = [
             github: "https://github.com/bobjohnson",
             linkedin: "https://www.linkedin.com/in/bobjohnson",
           },
-          {
-            name: "Emma Watson",
-            title: "UI Developer",
-            image: "https://randomuser.me/api/portraits/women/15.jpg",
-            github: "https://github.com/emmawatson",
-            linkedin: "https://www.linkedin.com/in/emmawatson",
-          },
-          {
-            name: "David Miller",
-            title: "Frontend Engineer",
-            image: "https://randomuser.me/api/portraits/men/25.jpg",
-            github: "https://github.com/davidmiller",
-            linkedin: "https://www.linkedin.com/in/davidmiller",
-          },
-          {
-            name: "Grace Lee",
-            title: "UX Designer",
-            image: "https://randomuser.me/api/portraits/women/32.jpg",
-            github: "https://github.com/gracelee",
-            linkedin: "https://www.linkedin.com/in/gracelee",
-          },
         ],
       },
       {
-        name: "Eve White",
-        title: "UI/UX Coordinator",
-        image: "https://randomuser.me/api/portraits/women/22.jpg",
-        github: "https://github.com/evewhite",
-        linkedin: "https://www.linkedin.com/in/evewhite",
+        name: "Abhik Ghosh",
+        title: "Full-stack Coordinator",
+        image: "assets/abhik.jpeg",
+        github: "https://github.com/Abhik4004",
+        linkedin: "https://www.linkedin.com/in/abhik-ghosh-27b3632a0/",
         members: [
           {
             name: "Chris Brown",
@@ -60,35 +38,14 @@ const mentors = [
             github: "https://github.com/chrisbrown",
             linkedin: "https://www.linkedin.com/in/chrisbrown",
           },
-          {
-            name: "Sarah Johnson",
-            title: "UX Designer",
-            image: "https://randomuser.me/api/portraits/women/50.jpg",
-            github: "https://github.com/sarahjohnson",
-            linkedin: "https://www.linkedin.com/in/sarahjohnson",
-          },
-          {
-            name: "Alex Turner",
-            title: "Junior UI Designer",
-            image: "https://randomuser.me/api/portraits/men/67.jpg",
-            github: "https://github.com/alexturner",
-            linkedin: "https://www.linkedin.com/in/alexturner",
-          },
-          {
-            name: "Emily Davis",
-            title: "Junior UX Designer",
-            image: "https://randomuser.me/api/portraits/women/78.jpg",
-            github: "https://github.com/emilydavis",
-            linkedin: "https://www.linkedin.com/in/emilydavis",
-          },
         ],
       },
       {
-        name: "Jack Smith",
-        title: "Backend Coordinator",
-        image: "https://randomuser.me/api/portraits/men/12.jpg",
-        github: "https://github.com/jacksmith",
-        linkedin: "https://www.linkedin.com/in/jacksmith",
+        name: "Sahel Bej",
+        title: "AI/ML Coordinator",
+        image: "assets/sahel.jpg",
+        github: "https://github.com/CoderSahel",
+        linkedin: "https://www.linkedin.com/in/sahel-bej/",
         members: [
           {
             name: "Sophia Brown",
@@ -97,27 +54,6 @@ const mentors = [
             github: "https://github.com/sophiabrown",
             linkedin: "https://www.linkedin.com/in/sophiabrown",
           },
-          {
-            name: "John Turner",
-            title: "Backend Engineer",
-            image: "https://randomuser.me/api/portraits/men/91.jpg",
-            github: "https://github.com/johnturner",
-            linkedin: "https://www.linkedin.com/in/johnturner",
-          },
-          {
-            name: "Olivia Clark",
-            title: "Junior Backend Engineer",
-            image: "https://randomuser.me/api/portraits/women/56.jpg",
-            github: "https://github.com/oliviaclark",
-            linkedin: "https://www.linkedin.com/in/oliviaclark",
-          },
-          {
-            name: "Daniel White",
-            title: "Backend Developer",
-            image: "https://randomuser.me/api/portraits/men/77.jpg",
-            github: "https://github.com/danielwhite",
-            linkedin: "https://www.linkedin.com/in/danielwhite",
-          },
         ],
       },
     ],
@@ -125,13 +61,25 @@ const mentors = [
   // Add more mentors if needed
 ];
 
-const Teams = () => {
+const Teams = ({ onShowTeams }) => {
+  const handleClick = () => {
+    if (onShowTeams) {
+      onShowTeams();
+    }
+  };
+
   return (
-    <div className="teams-container">
+    <div className="teams-container" id="team">
       <h2 className="teams-heading">Teams</h2>
       <div className="mentors-grid">
         {mentors.map((mentor, index) => (
-          <div key={index} className="mentor-card">
+          <div key={index} className="mentor-card relative">
+            <div
+              className="absolute top-2 right-5 font-semibold text-xl bg-blue-600 p-2 text-white rounded-full h-12 w-12 flex justify-center items-center cursor-pointer"
+              onClick={handleClick}
+            >
+              X
+            </div>
             <img src={mentor.image} alt={mentor.name} />
             <h2>{mentor.name}</h2>
             <p>{mentor.title}</p>
