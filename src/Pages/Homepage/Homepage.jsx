@@ -10,7 +10,7 @@ const Homepage = () => {
   const [showTeams, setShowTeams] = useState(false);
 
   const handleShowTeams = () => {
-    setShowTeams(true);
+    setShowTeams(!showTeams);
   };
 
   return (
@@ -19,8 +19,12 @@ const Homepage = () => {
       <About />
       <Projects />
       <>
-        {showTeams ? <Teams /> : <Pupil onShowTeams={handleShowTeams} />}
-        <ContactPage />
+        {showTeams ? (
+          <Teams onShowTeams={handleShowTeams} />
+        ) : (
+          <Pupil onShowTeams={handleShowTeams} />
+        )}
+        {/* <ContactPage /> */}
       </>
     </>
   );

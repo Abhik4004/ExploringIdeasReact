@@ -1,6 +1,10 @@
 .pupil-container {
-  padding: 20px;
+  padding: 4rem 20px 20px 20px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-title {
@@ -64,7 +68,6 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 45%;
 }
 
 .show-teams-btn:hover {
