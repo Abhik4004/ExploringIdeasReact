@@ -4,7 +4,7 @@ const mentor = {
   name: "Dr.Satyabrata Maity",
   title: "Web Developer",
   introduction:
-    "Dr. Satyabrata Maity is a seasoned web developer with over 10 years of experience. Specializing in front-end development, he excels in crafting user-friendly and responsive web applications using modern frameworks. His expertise lies in creating intuitive interfaces that enhance user experience, leveraging his deep understanding of JavaScript, CSS, and various front-end technologies. John is passionate about staying updated with industry trends and implementing best practices to deliver innovative solutions that meet client needs effectively.",
+    "Dr. Satyabrata Maity has dedicated his career to AI and ML, specializing in designing intelligent systems for predictive analytics, natural language processing, and automated decision-making. His expertise lies in creating AI-driven applications that enhance user interaction and deliver insightful results.",
   image: "assets/sbm.enc",
   github: "https://github.com/johndoe",
   linkedin: "https://www.linkedin.com/in/johndoe",

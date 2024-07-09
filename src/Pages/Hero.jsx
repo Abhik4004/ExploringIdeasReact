@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./Hero.css"; // Import CSS file for Hero component styles
+import "./Hero.css";
 
 const Hero = () => {
   const sloganRef = useRef(null);
@@ -29,7 +29,8 @@ const Hero = () => {
 
   return (
     <div className="hero w-full" id="home">
-      <h1 className="title">Exploring Ideas</h1>
+      <img src="assets/logo/logo.png" alt="Logo" className="logo" />
+      {/* <h1 className="title">Exploring Ideas</h1> */}
       <p ref={sloganRef} className={`slogan ${isAnimated ? "animated" : ""}`}>
         Innovate, Create, Elevate
       </p>
